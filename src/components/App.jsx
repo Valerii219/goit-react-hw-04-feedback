@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Notification from "./Notification/Notification";
 import Section from "./Section/Section";
 import FeedbackOptions from "./FeedbackOptions/FeedbackOptions";
@@ -9,9 +9,7 @@ const App =() =>{
 const [good, setGood] = useState(0);
 const [neutral, setNeutral] = useState(0);
 const [bad, setBad] = useState(0);
-useEffect(()=>
 
-{if(good)console.log(123)}, [good])
  const handleClick =(option) => {
         if(option === 'good'){
             setGood((prevGood)=> prevGood + 1);}
